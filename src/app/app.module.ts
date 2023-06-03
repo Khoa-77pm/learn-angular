@@ -14,9 +14,10 @@ import { BoardPanelComponent } from './board-panel/board-panel.component';
 import { LikeComponent } from './like/like.component';
 import { InputFormatDirective } from './directives/input-format.directive';
 import { PhoneNumberFormatDirective } from './directives/phone-number-format.directive';
+import { ZippyComponent } from './directives/zippy/zippy.component';
 
 @NgModule({
-  declarations: [AppComponent, Courses, CourseComponent, AuthorsComponent, SummaryPipe, FavoritesComponent, BoardPanelComponent, LikeComponent, InputFormatDirective, PhoneNumberFormatDirective],
+  declarations: [AppComponent, Courses, CourseComponent, AuthorsComponent, SummaryPipe, FavoritesComponent, BoardPanelComponent, LikeComponent, InputFormatDirective, PhoneNumberFormatDirective, ZippyComponent],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [CoursesService],
   bootstrap: [AppComponent],

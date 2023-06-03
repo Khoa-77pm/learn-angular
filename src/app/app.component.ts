@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges, SimpleChanges } from '@angular/core';
 import { FavoriteChangeEventArg } from './favorites/favorites.component';
 
 @Component({
@@ -6,7 +6,6 @@ import { FavoriteChangeEventArg } from './favorites/favorites.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-
-  courses = []
+export class AppComponent {  
+  viewMode = 'map'
 }

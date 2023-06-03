@@ -7,16 +7,16 @@ import { FavoriteChangeEventArg } from './favorites/favorites.component';
   styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  removeCourse(course: { id: number; name: string }) {
-    let index = this.courses.indexOf(course);    
-    this.courses.splice(index,1);
+  task={
+    task_id: "Daily run",
+    assignee:{
+      name:"Mac"
+    }
   }
-  addCourse() {
-    this.courses.push({id:10,name:"New course"})
+
+  task2={
+    task_id: "Daily run",
+    assignee:null
   }
-  courses = [
-    { id: 1, name: "Math" },
-    { id: 2, name: "Physical" },
-    { id: 3, name: "Biology" },
-  ];
+
 }

@@ -1,16 +1,3 @@
+{{task.assignee.name}}
 
-<button (click)="addCourse()" class="btn btn-primary">Add</button>
-<table class="table table-striped">
-    <tbody>
-      <tr *ngFor="let course of courses; index as idx; even as isEven">
-        <td>{{idx}}</td>
-        <td>{{course.name}}</td>
-        <td>
-          <button  (click)="removeCourse(course)" class="btn btn-danger">Remove</button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-<div *ngIf="courses.length  > 0 ; else no">{{courses.length}} courses</div>
-<ng-template #no>There is no course</ng-template>
+{{task2.assignee?.name}}

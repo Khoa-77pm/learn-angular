@@ -1,3 +1,10 @@
-{{task.assignee.name}}
 
-{{task2.assignee?.name}}
+<button (click)="load()" class="btn btn-primary">Load</button>
+<table class="table table-striped">
+    <tbody>
+      <tr *ngFor="let course of courses; index as idx; even as isEven; TrackBy trackCourse">
+        <td>{{idx}}</td>
+        <td>{{course.name}}</td>
+      </tr>
+    </tbody>
+  </table>

@@ -145,8 +145,14 @@ use case:
 - modify structure of the DOM
 * Attribute directive:
 
+## Reconstruct
+when hit "Load", the ```ul``` will be re-construct that may be performance issues.
+* By default, DOM track object by object id in memory
+* Each time hit load button, angular download courses as new object. 
 
-
+Solution:
+* tell angular to track by course.id
+* When deal with complex list, need to consider to use `trackby`
 
 
 

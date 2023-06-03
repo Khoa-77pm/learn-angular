@@ -7,16 +7,17 @@ import { FavoriteChangeEventArg } from './favorites/favorites.component';
   styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  task={
-    task_id: "Daily run",
-    assignee:{
-      name:"Mac"
-    }
-  }
+  courses: { id: number; name: string; }[] | undefined;
 
-  task2={
-    task_id: "Daily run",
-    assignee:null
+  trackCourse(index: number,course: { id: number; name: string; }){
+    return course ? course.id : undefined;
+  } 
+  
+  load(){
+    this.courses = [
+      {id:1,name:"Math"},
+      {id:2,name:"Physical"},
+      {id:3,name:"Biology"}
+    ]
   }
-
 }

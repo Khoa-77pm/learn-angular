@@ -146,13 +146,17 @@ use case:
 * Attribute directive:
 
 ## Reconstruct
-when hit "Load", the ```ul``` will be re-construct that may be performance issues.
+when hit "Load", the _ul_ will be re-construct that may be performance issues.
 * By default, DOM track object by object id in memory
 * Each time hit load button, angular download courses as new object. 
 
 Solution:
 * tell angular to track by course.id
 * When deal with complex list, need to consider to use `trackby`
+
+## leading asterisk
+* _Asterisk_ will be rewrite as `ng-template`
+
 
 
 

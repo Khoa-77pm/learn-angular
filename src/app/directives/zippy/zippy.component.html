@@ -1,0 +1,14 @@
+<div class="zippy">
+    <div class="zippy-heading" (click)="onClick()">
+        {{title}}
+        <i class="bi"
+            [ngClass]="{
+                'bi-caret-down-fill':!isShow,
+                'bi-caret-up-fill':isShow,
+            }"
+        ></i>
+    </div>
+    <div class="zippy-body">
+        <ng-content *ngIf="isShow"></ng-content>
+    </div>
+</div>

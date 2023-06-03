@@ -41,6 +41,6 @@ testem.log
 .DS_Store
 Thumbs.db
 
-.angular/
+/.angular
 *.pack
 *.pack.old

@@ -12,9 +12,11 @@ import { SummaryPipe } from './summary.pipe';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { BoardPanelComponent } from './board-panel/board-panel.component';
 import { LikeComponent } from './like/like.component';
+import { InputFormatDirective } from './directives/input-format.directive';
+import { PhoneNumberFormatDirective } from './directives/phone-number-format.directive';
 
 @NgModule({
-  declarations: [AppComponent, Courses, CourseComponent, AuthorsComponent, SummaryPipe, FavoritesComponent, BoardPanelComponent, LikeComponent],
+  declarations: [AppComponent, Courses, CourseComponent, AuthorsComponent, SummaryPipe, FavoritesComponent, BoardPanelComponent, LikeComponent, InputFormatDirective, PhoneNumberFormatDirective],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [CoursesService],
   bootstrap: [AppComponent],

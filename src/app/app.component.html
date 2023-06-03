@@ -1,19 +1,8 @@
-<button 
-  (click)="onClick()"
-  [style.background-color]="canSave? 'blue':'gray'"
-  [style.color]="canSave?'white':'black'"
-  [style.font-size]="canSave?'30px':'20px'"
->
-Save (make by style binding)</button>
+
+
+
+<input type="text" [appInputFormat]="'uppercase'">
 
 <br>
-
-<button 
-  (click)="onClick()"
-  [ngStyle]="{
-    'background-color':canSave? 'blue':'gray',
-    'color':canSave?'white':'black',
-    'font-size':canSave?'30px':'20px'
-  }"
->
-Save (make by ngStyle)</button>
+<br>
+<input appPhoneNumberFormat >

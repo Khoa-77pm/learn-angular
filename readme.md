@@ -162,6 +162,12 @@ Solution:
 * to replace multiple class bindings
 * key must in quotes 
 
+## Custom directive
+* to manipulate DOM element
+* command: `ng g d directive-name`
+* Decorators:
+    - @input
+    - @HostListener
 
 
 

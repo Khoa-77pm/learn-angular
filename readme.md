@@ -158,6 +158,10 @@ Solution:
 * _Asterisk_ will be rewrite as `ng-template`
 
 
+## ngClass
+* to replace multiple class bindings
+* key must in quotes 
+
 
 
 

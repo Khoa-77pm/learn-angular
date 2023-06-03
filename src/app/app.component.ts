@@ -7,8 +7,8 @@ import { FavoriteChangeEventArg } from './favorites/favorites.component';
   styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  isSelected = false;
+  canSave = false;
   onClick(){
-    this.isSelected = !this.isSelected;
+    this.canSave = !this.canSave;
   }
 }

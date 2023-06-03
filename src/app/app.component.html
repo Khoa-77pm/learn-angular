@@ -1,8 +1,19 @@
+<button 
+  (click)="onClick()"
+  [style.background-color]="canSave? 'blue':'gray'"
+  [style.color]="canSave?'white':'black'"
+  [style.font-size]="canSave?'30px':'20px'"
+>
+Save (make by style binding)</button>
 
+<br>
 
-<i class="bi" 
-  [ngClass]="{
-    'bi-star-fill':isSelected,
-    'bi-star':!isSelected,
-  }" 
-  (click)="onClick()"></i>
+<button 
+  (click)="onClick()"
+  [ngStyle]="{
+    'background-color':canSave? 'blue':'gray',
+    'color':canSave?'white':'black',
+    'font-size':canSave?'30px':'20px'
+  }"
+>
+Save (make by ngStyle)</button>

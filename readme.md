@@ -191,6 +191,9 @@ Two way to create FormControl and FormGroup
 ## Template driven from
 * `ngModel` require attribute `name` of the variable of component
 
+## Form - validation
+* Each validation has its own message
+
 
 
 

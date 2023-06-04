@@ -1,8 +1,18 @@
 <form>
   <div class="form-group">
     <label for="firstName">First name</label>
-    <input ngModel name="firstName" #firstName="ngModel" required class="form-control" (change)="log(firstName)">
-    <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">First name is requried</div>
+    <input ngModel name="firstName" #firstName="ngModel" 
+        required 
+        maxlength="10"
+        minlength="5"
+        pattern="[a-z]{5,10}"
+    class="form-control" (change)="log(firstName)">
+    <div class="alert alert-danger" *ngIf="firstName.touched && firstName.invalid">
+        <div *ngIf="firstName?.errors?.['required']" >First name is requried</div>
+        <div *ngIf="firstName?.errors?.['minlength']">Length is from 5 to 10 </div>
+        <div *ngIf="firstName?.errors?.['maxlength']">Length is from 5 to 10 </div>
+        <div *ngIf="firstName?.errors?.['pattern']">Please input lowercase alphabet </div>
+    </div>
   </div>
   <div class="form-group">
     <label for="comment">Comment</label>

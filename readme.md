@@ -188,7 +188,8 @@ Two way to create FormControl and FormGroup
 * Code <-- Called `Reactive Form` or `Model driven form` | Explicit
 
 
-
+## Template driven from
+* `ngModel` require attribute `name` of the variable of component
 
 
 

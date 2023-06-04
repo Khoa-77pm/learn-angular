@@ -170,6 +170,22 @@ Solution:
     - @HostListener
 
 
+## Form 
+
+* `FormControl` to control each input of form
+* `FormGroup` is group of FormControls
+* Status:
+    - value
+    - touched
+    - untouched
+    - dirty
+    - pristine
+    - valid
+    - errors
+
+Two way to create FormControl and FormGroup
+* Directive (will be added to template)   <-- called `template-driven form` | Implicit
+* Code <-- Called `Reactive Form` or `Model driven form` | Explicit
 
 
 
